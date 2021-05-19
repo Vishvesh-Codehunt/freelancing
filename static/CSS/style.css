@@ -64,7 +64,7 @@
     text-decoration: none;
     background-color:aquamarine;
     margin-top:10px;
-    padding:10px 104px;
+    padding:10px 50px;
 }
 .header-a{
     text-decoration:none;
@@ -111,16 +111,17 @@
     display:flex; 
 }
 .icon{
-    padding:50px 20px;
+    padding:40px 20px;
 }
 .icon-p{
-    padding-top:40px;
-    width:90%;
+    padding-bottom:30px;
+    width:95%;
     flex:1;
 }
 .icon-p-span{
-    font-size:20px;
+    font-size:26px;
     font-weight:600;
+    padding-top:40px;
 }
 .body2{
     margin-left:90px;
@@ -132,3 +133,49 @@
     margin-top:50px;
     margin-bottom:50px;
 }
+
+@media only screen and (max-width: 800px) {
+    .nav-link, .navbar-brand{
+        margin-top:10px;
+    }
+    .first-row{
+        margin-top:40px;
+    }
+    .banner-header{
+        font-size:33px;
+    }
+    .banner-p{
+        width:100%;
+        margin-top:15px;
+    }
+    .header-image{
+        display:none;
+    }
+    .body1{
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .body2{
+        margin-left:10px;
+        margin-right:10px;
+        margin-top:30px;
+    }
+    .body-p{
+        font-size:26px;
+    }
+    .icon{
+        padding-top:30px;
+        padding-left:0px; padding-right:0px;
+        padding-bottom:20px;
+    }
+    .icon-p-span{
+        font-size:26px;
+        font-weight:600;
+        padding-top:0px;
+        width:100%;
+        text-align:center;
+    }
+    .icon-p{
+        text-align:center;
+    }
+  }
