@@ -409,6 +409,19 @@ textarea{
     background-color:gray;
     border:1px solid #1d0553;
 }
+.copyright{
+    color:white;
+    font-size:20px;
+}
+.social-icon{
+    color:white;
+    padding-left:10px;
+    cursor:pointer;
+    padding-bottom:30px;
+}
+.social-icon:hover{
+    color:#846add;
+}
 @media only screen and (max-width: 900px) {
     .timeline ul li div {
         width: 250px;
@@ -435,6 +448,9 @@ textarea{
         margin-left:0px;
         margin-bottom:80px;
         margin-top:20px;
+    }
+    .footer-devider-3s1{
+        margin-left:10px;
     }
   }
 
