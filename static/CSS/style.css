@@ -452,6 +452,84 @@ textarea{
 .news-row2{
     margin-top:40px;
 }
+.first-step{
+    height:100%;
+    width:107%;
+    text-align:left;
+    margin-left:0px;
+    margin-right:0px;
+    position: relative;
+    right:16px;
+}
+.step1{
+    background-color:#7e71c1;
+    height:100%;
+    width:100%
+}
+.step2{
+    background-color:#f6ac40;
+    height:100%;
+    width:100%;
+}
+.step3{
+    background-color:#4dd2b1;
+    height:100%;
+    width:100%;
+}
+.number{
+    font-size:80px;
+    font-weight:600;
+    color:white;
+    text-align:center;
+    padding-top:60px;
+}
+.second-header{
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.number-btn-2{
+    border-radius:14px;
+    border:1px solid white;
+    background-color:rgba(126,113,193,0.4);
+    color:white;
+    padding:10px 10px;
+    margin-bottom:40px;
+}
+.number-btn-2:hover{
+    background-color:#fff;
+}
+.number-btn-2 a{
+    color:white;
+    padding:10px 5px;
+}
+.number-btn-3{
+    border-radius:14px;
+    border:1px solid white;
+    background-color:rgba(77,210,177,0.4);
+    color:white;
+    padding:10px 10px;
+    margin-bottom:40px;
+}
+.number-btn-3:hover{
+    background-color:#fff;
+}
+.number-btn-3 a{
+    color:white;
+    padding:10px 5px;
+}
+.how-buy{
+    margin-top:70px;
+}
+.buy-header-2{
+    text-align:center;
+    font-family:"Josefin Sans";
+    font-size:50px;
+}
+.number-btn-windows{
+    margin-bottom:0px;
+}
 @media only screen and (max-width: 900px) {
     .timeline ul li div {
         width: 250px;
@@ -588,5 +666,15 @@ textarea{
     }
     .news-row2{
         margin-top:0px;
+    }
+    .first-step{
+        position:relative;
+        width:110%;
+    }
+    .number-btn-playstore{
+        margin-top:10px;
+    }
+    .number-btn-windows{
+        margin-bottom:0px;
     }
   }
