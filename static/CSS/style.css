@@ -302,7 +302,7 @@ textarea{
 }
 .main-header-contact{
     text-align:center;
-    margin-top:50px;
+    margin-top:100px;
     font-weight:600;
     font-size:28px;
 }
@@ -420,7 +420,37 @@ textarea{
     padding-bottom:30px;
 }
 .social-icon:hover{
-    color:#846add;
+    color:aquamarine;
+}
+/* news */
+.news-header{
+    text-align:center;
+    font-weight:600;
+    margin-top:50px;
+    font-family:"Josefin Sans";
+}
+.second-news-header{
+    text-align:center;
+    font-family:"Josefin Sans";
+    font-size:50px;
+}
+.blog-1{
+    height:90%;
+    width:100%;
+    margin-top:10px;
+}
+.post-header{
+    font-weight:700;
+    font-size:24px;
+}
+.author{
+    color:#1d0553;
+}
+.news-row{
+    margin-top:80px;
+}
+.news-row2{
+    margin-top:40px;
 }
 @media only screen and (max-width: 900px) {
     .timeline ul li div {
@@ -451,6 +481,9 @@ textarea{
     }
     .footer-devider-3s1{
         margin-left:10px;
+    }
+    .news-row2{
+        margin-top:0px;
     }
   }
 
@@ -552,5 +585,8 @@ textarea{
     }
     .footer-p{
         width:100%;
+    }
+    .news-row2{
+        margin-top:0px;
     }
   }
