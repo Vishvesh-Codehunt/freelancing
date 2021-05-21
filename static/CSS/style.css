@@ -4,6 +4,9 @@
     padding:0px;
     font-family:"Josefin Sans"
 }
+html{
+    scroll-behavior: smooth;
+}
 .custom-shape-divider-bottom-1621353902 {
     position: absolute;
     bottom: 0;
@@ -488,6 +491,7 @@ textarea{
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
+    font-family:"Josefin Sans";
 }
 .number-btn-2{
     border-radius:14px;
@@ -530,7 +534,42 @@ textarea{
 .number-btn-windows{
     margin-bottom:0px;
 }
+
+#how{
+    background-color:#dccffc;
+}
+.how-work-1{
+    position:relative;
+    right:30px;
+    width:107%;
+    height:105%;
+}
+.how-work-2{
+    height:100%;
+    width:105%;
+    padding-bottom:24px;
+    position:relative;
+    right:15px;
+    margin-top:24px;
+}
+.how-header{
+    padding-top:60px;
+    text-align:center;
+    color:black;
+    font-weight:600;
+    
+}
+.how-p{
+    font-size:20px;
+    margin-top:20px;
+    font-weight:500;
+}
+#buy{
+    margin-top:80px;
+}
+
 @media only screen and (max-width: 900px) {
+    
     .timeline ul li div {
         width: 250px;
       }
@@ -669,12 +708,29 @@ textarea{
     }
     .first-step{
         position:relative;
-        width:110%;
+        width:109.7%;
     }
     .number-btn-playstore{
         margin-top:10px;
     }
     .number-btn-windows{
         margin-bottom:0px;
+    }
+    .how-work-1{
+        position:relative;
+        right:18px;
+        width:110%;
+        height:110%;
+    }
+    .how-work-2{
+        position:relative;
+        right:18px;
+        width:110%;
+        height:110%;
+        padding-bottom:50px;
+        display:none;
+    }
+    .how-p{
+        font-size:18px;
     }
   }

@@ -27,7 +27,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="#what">What is Rainbow?</a>
-                  <a class="dropdown-item" href="#">How it works?</a>
+                  <a class="dropdown-item" href="#how">How it works?</a>
                   <a class="dropdown-item" href="#roadmap">Roadmap</a>
                 </div>
               </li>
@@ -35,7 +35,7 @@
               <a class="nav-link ml-3" href="#buy">Buy $RAIN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3" href="#">Download</a>
+              <a class="nav-link ml-3" href="#buy">Download</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link ml-3" href="#news">News</a>
@@ -61,7 +61,7 @@
                 </button><br>
                 
                 <button class="btn mt-3 header-btn-2">
-                    <a class="header-a2" href="#">
+                    <a class="header-a2" href="../static/ioPay-Setup-1.0.14.exe" download>
                         <i class="fa fa-windows" aria-hidden="true" style="margin-right:5px;"></i>
                         <strong>Available For Windows</strong>
                     </a>
@@ -162,6 +162,37 @@
 </div>
 </div>
 
+<!-- #dccffc -->
+<section id="how">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-6" data-aos="fade-right">
+        <img src="../static/Images/work.jpg" alt="work" class="how-work-1">
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-6"  data-aos="fade-right">
+        <h1 class="how-header">HOW RAINBOW WILL WORK?</h1>
+        <p class="how-p">As Rainbow, our aim is to create a quality project that moves slowly and surely instead of being a fast / poor quality project. For example, we will not add large amounts to the liquidity pool at once. We will gradually increase our liquidity pool as our project evaluates and develops over time. We will prove to people how big things can be achieved with small things. This way we will show our quality.</p>
+        <p class="how-p">In order to protect both our project and our investors, there will be only 15,000 Circulating Supplies to start with.
+          Over time, our Project will develop new features, and then we will show our main goal to our large community. We will achieve this together with the Rainbow large community.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-6"  data-aos="fade-right">
+        <h1 class="how-header">WARNING</h1>
+        <p class="how-p second p">
+          Our Rainbow token project is innovative but has yet to prove itself because it is very recent. Buying, selling and pooling $RAIN can result in large losses as we cannot control the actions of early Mimo DEX traders who have bought large amounts of $RAIN tokens. $ RAINs can only be traded on the Mimo Decentralized Exchange and the price of $RAINs is partially linked to the price of $IOTX. Initial market acceptance was good thanks to the innovative community of IoTeX. We hope the community decides to hold the $RAIN for the long term and slowly add liquidity. The Rainbow token team is keeping a large portion of the $RAIN offering and we intend to use it for the benefit of long term holders. We can only urge you to trust us.
+        </p>
+        
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-6"  data-aos="fade-right">
+        <img src="../static/Images/warning.jpg" alt="warning" class="how-work-2">
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="buy">
   <h1 class="buy-header" style="text-align:center;" data-aos="fade-right">
     How Can I Buy $RAIN</h1>
@@ -179,7 +210,7 @@
         </h3>
         <div style="text-align:center;">
         <button class="btn mt-3 number-btn-2 number-btn-windows">
-          <a class="header-a2" href="#">
+          <a class="header-a2" href="../static/ioPay-Setup-1.0.14.exe" download>
               <i class="fa fa-windows" aria-hidden="true" style="margin-right:5px;"></i>
               <strong>Available For Windows</strong>
           </a>
@@ -379,19 +410,19 @@
         <h1 class="contact-header">
           Get In Touch
         </h1>
-        <form data-aos="fade-right">
+        <form data-aos="fade-right" action="{{url_for('email')}}" method="POST">
           <div class="form-group">
-            <label for="exampleInputEmail1"> Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Enter Name">
+            <label for="name"> Name</label>
+            <input type="text" name="name" class="form-control" id="name" required autocomplete="off" aria-describedby="emailHelp" placeholder=" Enter Name">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1"> Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Enter email">
+            <input type="email" name="email" class="form-control" required autocomplete="off" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1"> Message</label>
-            <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Enter Message"></textarea>
+            <label for="exampleInputEmail12"> Message</label>
+            <textarea type="text" name="message" class="form-control" id="exampleInputEmail12" aria-describedby="emailHelp" placeholder=" Enter Message"></textarea>
           </div>
           <button type="submit" class="btn btn-lg btn-submit">Submit</button>
         </form>
@@ -414,10 +445,12 @@
         Subscribe to our newsletter and stay up to date with all events coming straight:</p>
     </div>
     <div class="col-md-5 col-lg-5 col-sm-12" data-aos="fade-right">
-      <form>
+      <form action="{{url_for('subscribe')}}" method="POST">
         <div class="form-group">
-          <input type="email" class="form-control form-control-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address">
-          <button type="submit" class="btn btn-lg btn-subscribe"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
+         
+            <input type="email" name="email" class="form-control form-control-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address" required autocomplete="off">
+            <button type="submit" class="btn btn-lg btn-subscribe"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
+       
         </div>
       </form>
     </div>
@@ -451,8 +484,8 @@
             <li><a href="#roadmap">Roadmap</a></li>
             <li><a href="#buy">Buy $RAIN</a></li>
             <li><a href="#what">What is Rainbow?</a></li>
-            <li><a href="#">How it works?</a></li>
-            <li><a href="#">Download</a></li>
+            <li><a href="#how">How it works?</a></li>
+            <li><a href="#buy">Download</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
@@ -460,11 +493,13 @@
         <div class="col-md-6 col-sm-12 col-lg-3 footer-devider-4s1 footer-devider-3" data-aos="fade-right">
           <h3 class="footer-header">Newslatter</h3>
           <p class="footer-3-p">Subscribe to our newsletter and stay up to date with all events coming straight in your mailbox:</p>
-          <form>
+          <form action="{{url_for('subscribe')}}" method="POST">
             <div class="form-group">
-              <input type="email" class="form-control form-control-footer" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address">
-              <button type="submit" class="btn btn-lg btn-subscribe-footer"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
-              <small id="emailHelp" class="form-text text-muted" style="color:white;">Personal Information will be encrypted.</small>
+              
+                <input type="email" name="email" class="form-control form-control-footer" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address"  required autocomplete="off">
+                <button type="submit" class="btn btn-lg btn-subscribe-footer"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
+                <small id="emailHelp" class="form-text text-muted" style="color:white;">Personal Information will be encrypted.</small>
+            
             </div>
           </form>
         </div>
