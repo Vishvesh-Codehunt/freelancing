@@ -605,19 +605,17 @@ textarea{
     .how-work-1{
         position:relative;
         right:14px;
-        width:103.6%;
+        width:103.7%;
         height:100%;
     }
     .how-work-2{
-        position:relative;
-        right:18px;
-        width:100%;
-        height:100%;
-        padding-bottom:50px;
         display:none;
     }
     .first-step{
         width:104.2%;
+        position:relative;
+        
+        right:16px;
     }
     .subscribe-p{
         text-align:center;
@@ -731,7 +729,8 @@ textarea{
     }
     .first-step{
         position:relative;
-        width:109.7%;
+        width:109.4%;
+        right:16px;
     }
     .number-btn-playstore{
         margin-top:10px;
