@@ -406,7 +406,7 @@
       <div class="col-md-6 col-sm-12 col-lg-6" style="text-align:center;" data-aos="fade-right">
         <img src="../static/Images/contact.webp" alt="contact-photo" class="contact-img">
       </div>
-      <div class="col-md-5 col-sm-12 col-lg-5" data-aos="fade-right">
+      <div class="col-md-6 col-sm-12 col-lg-5" data-aos="fade-right">
         <h1 class="contact-header">
           Get In Touch
         </h1>
@@ -437,20 +437,21 @@
 </svg>
   <div class="container">
     <div class="row">
-    <div class="col-md-1 col-lg-1 col-sm-12" style="text-align:center;" data-aos="fade-right">
+    <div class="col-md-12 col-lg-1 col-sm-12" style="text-align:center;" data-aos="fade-right">
       <img src="../static/Images/email.png" alt="email" class="email-icon">
     </div>
-    <div class="col-md-6 col-lg-6 col-sm-12" data-aos="fade-right">
+    <div class="col-md-12 col-lg-6 col-sm-12" data-aos="fade-right">
       <p class="subscribe-p">	
         Subscribe to our newsletter and stay up to date with all events coming straight:</p>
     </div>
-    <div class="col-md-5 col-lg-5 col-sm-12" data-aos="fade-right">
+    <div class="col-md-12 col-lg-5 col-sm-12" data-aos="fade-right">
       <form action="{{url_for('subscribe')}}" method="POST">
         <div class="form-group">
          
             <input type="email" name="email" class="form-control form-control-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Your E-mail Address" required autocomplete="off">
-            <button type="submit" class="btn btn-lg btn-subscribe"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
-       
+            <div class="sub-btn">
+              <button type="submit" class="btn btn-lg btn-subscribe"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>    Subscribe</button>
+            </div>
         </div>
       </form>
     </div>
